@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.txbydev4.helloword.MyViewGroup
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <com.example.txbydev4.helloword.MyView
+        android:layout_width="match_parent"
+        android:layout_height="300dp" />
+
+</com.example.txbydev4.helloword.MyViewGroup>

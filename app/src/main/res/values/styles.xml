@@ -1,0 +1,61 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        //配置style
+        <item name="custom_style">@style/custom_theme</item>
+        //直接在主题中指定
+        <item name="custom_color1">#ff444444</item>
+        <item name="custom_color2">#ff444444</item>
+        <item name="custom_color3">#ff444444</item>
+        <item name="custom_color4">#ff444444</item>
+        <item name="custom_color5">#ff444444</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="listAppTheme" parent="AppTheme">
+        <!-- Customize your theme here. -->
+        <item name="android:listDivider">@drawable/divider_bg</item>
+    </style>
+
+    <declare-styleable name="TextView">
+        <attr name="color_view" format="color|reference"></attr>
+        <attr name="size_view" format="dimension|reference"></attr>
+    </declare-styleable>
+
+    //主题中配置的style
+    <style name="custom_theme">
+        <item name="custom_color1">#ff222222</item>
+        <item name="custom_color2">#ff222222</item>
+        <item name="custom_color3">#ff222222</item>
+    </style>
+    //直接在layout文件中引用的style，最后会被放到set中
+    <style name="myStyle">
+        <item name="custom_color1">#ff111111</item>
+        <item name="custom_color2">#ff111111</item>
+    </style>
+
+    <declare-styleable name="TestStyle">
+        <attr name="custom_color1" format="color|reference"></attr>
+        <attr name="custom_color2" format="color|reference"></attr>
+        <attr name="custom_color3" format="color|reference"></attr>
+        <attr name="custom_color4" format="color|reference"></attr>
+        <attr name="custom_color5" format="color|reference"></attr>
+    </declare-styleable>
+
+    <attr name="custom_style" format="reference"></attr>
+
+    <style name="default_style">
+        <item name="custom_color1">#ff333333</item>
+        <item name="custom_color2">#ff333333</item>
+        <item name="custom_color3">#ff333333</item>
+        <item name="custom_color4">#ff333333</item>
+        <item name="custom_color5">#ff333333</item>
+    </style>
+
+</resources>
